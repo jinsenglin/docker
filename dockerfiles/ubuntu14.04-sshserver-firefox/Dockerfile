@@ -16,5 +16,6 @@ RUN apt-get install -y openssh-server # Install packages (.deb)
 EXPOSE 22
 
 # Usage: CMD ["executable","param1","param2"]
-CMD service ssh start
+CMD ["service", "ssh", "start"]
+# CMD ["/usr/sbin/sshd", "-D"]
 
