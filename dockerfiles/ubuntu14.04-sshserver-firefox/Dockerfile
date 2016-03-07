@@ -1,3 +1,5 @@
+# Sample Reference - https://docs.docker.com/engine/examples/running_ssh_service/
+
 # Usage: FROM [image name]
 # Reference: http://docs.docker.com/engine/reference/builder/#from
 FROM ubuntu:14.04.4
