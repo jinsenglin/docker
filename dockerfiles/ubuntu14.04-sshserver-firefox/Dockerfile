@@ -9,5 +9,7 @@ MAINTAINER Jim Lin
 # Usage: RUN [command]
 # Reference: http://docs.docker.com/engine/reference/builder/#run
 RUN apt-get update # Update the repository sources list
-
 RUN apt-get install -y openssh-server firefox # Install packages (.deb)
+
+# Usage: EXPOSE <port> [<port>...]
+EXPOSE 22
