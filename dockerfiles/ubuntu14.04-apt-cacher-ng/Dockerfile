@@ -1,4 +1,5 @@
 # Sample Reference: https://docs.docker.com/engine/examples/apt-cacher-ng/
+# About apt-cacher: http://a0726h77.blogspot.tw/2012/12/apt-cacher.html
 
 # Usage: FROM [image name]
 # Reference: http://docs.docker.com/engine/reference/builder/#from
