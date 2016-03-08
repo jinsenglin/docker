@@ -30,3 +30,6 @@ CMD ["/usr/sbin/sshd", "-D"]
 
 # To build this image: docker build -t ubuntu14.04-sshserver-firefox .
 # To run this container: docker run -d -P --name sshd_firefox ubuntu14.04-sshserver-firefox
+# To get this container port: docker port sshd_firefox
+# To get docker machine ip: docker-machine ls
+# To ssh login to this container: ssh -X root@<docker machine ip> # password: screencast
