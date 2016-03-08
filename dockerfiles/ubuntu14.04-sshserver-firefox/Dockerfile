@@ -2,7 +2,7 @@
 
 # Usage: FROM [image name]
 # Reference: http://docs.docker.com/engine/reference/builder/#from
-FROM ubuntu:14.04.4
+FROM ubuntu:14.04
 
 # Usage: MAINTAINER [name]
 # Reference: http://docs.docker.com/engine/reference/builder/#maintainer
