@@ -17,4 +17,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # install "virtualenv", since the vast majority of users of this image will want it
 RUN pip install --no-cache-dir virtualenv
 
-CMD ["python"]
+CMD ["python2"]
