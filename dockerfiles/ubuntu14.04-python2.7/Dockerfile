@@ -15,6 +15,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
 # install "virtualenv", since the vast majority of users of this image will want it
-RUN pip install --no-cache-dir virtualenv
+RUN pip install virtualenv
 
 CMD ["python2"]
