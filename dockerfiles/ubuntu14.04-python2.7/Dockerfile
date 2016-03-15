@@ -23,10 +23,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
 COPY pydiction-1.2.3.zip /root/
-COPY .vimrc /root/
+# COPY .vimrc /root/
 WORKDIR /root/
 RUN unzip pydiction-1.2.3.zip \
 	&& mkdir -p .vim/after/ftplugin/ \
-	&& cp pydiction/after/ftplugin/python_pydiction.vim .vim/after/ftplugin/
+	&& cp pydiction/after/ftplugin/python_pydiction.vim .vim/after/ftplugin/ \
+	&& echo "filetype plugin on" >> .vimrc \
+	&& echo "let g:pydiction_location = '/root/pydiction/complete-dict'" >> .vimrc
 
 CMD ["python2"]
