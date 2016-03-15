@@ -23,6 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
 COPY pydiction-1.2.3.zip /root/
+COPY .vimrc /root/
 WORKDIR /root/
 RUN unzip pydiction-1.2.3.zip \
 	&& mkdir -p .vim/after/ftplugin/ \
