@@ -23,6 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
 COPY pydiction-1.2.3.zip /root/
-RUN unzip /root/pydiction-1.2.3.zip
+WORKDIR /root/
+RUN unzip pydiction-1.2.3.zip
 
 CMD ["python2"]
