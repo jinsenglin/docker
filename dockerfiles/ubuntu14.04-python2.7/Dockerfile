@@ -24,6 +24,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY pydiction-1.2.3.zip /root/
 WORKDIR /root/
-RUN unzip pydiction-1.2.3.zip
+RUN unzip pydiction-1.2.3.zip \
+	&& mkdir -p .vim/after/ftplugin/ \
+	&& cp pydiction/after/ftplugin/python_pydiction.vim .vim/after/ftplugin/
 
 CMD ["python2"]
