@@ -1,4 +1,4 @@
 for n in {1..3}
 do
-    docker run -d --name "monasca-agent-$n" monasca-agent
+    docker run -d -e "u=monasca" -e "p=nomoresecret" -e "pn=service" -e "ku=http://192.168.120.226:35357/v3" --name "monasca-agent-$n" monasca-agent
 done
