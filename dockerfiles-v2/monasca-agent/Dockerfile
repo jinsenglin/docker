@@ -4,8 +4,7 @@
 #
 # Run
 #
-#  docker run -ti monasca-agent
-#  (ctrl + p, ctrl + q to detach container)
+#  docker run -d monasca-agent
 #
 FROM python:2.7.12
 
