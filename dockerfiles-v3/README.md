@@ -15,5 +15,5 @@ docker run -it --rm nodejs-alpine node
 # Launch Daemon
 
 ```
-run --name python-http-server -d -p 8000:8000 python-alpine python -m SimpleHTTPServer 8000
+docker run --name python-http-server -d -p 8000:8000 python-alpine python -m SimpleHTTPServer 8000
 ```
