@@ -5,7 +5,7 @@ docker build -t python-alpine:latest -f python-alpine.Dockerfile .
 docker build -t nodejs-alpine:latest -f nodejs-alpine.Dockerfile .
 ```
 
-# Launch CLI
+# Launch Interactive CLI
 
 ```
 docker run -it --rm python-alpine python
