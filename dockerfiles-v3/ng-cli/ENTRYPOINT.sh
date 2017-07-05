@@ -2,4 +2,5 @@
 
 set -e
 
+cd /data
 exec ng $@
