@@ -1,7 +1,13 @@
+# Build
+
+```
+docker build -t openstack-cli:latest -f Dockerfile .
+```
+
 # Usage
 
 ```
-# equivalent to openstack help
+# equivalent to openstack --version
 docker run --rm openstack-cli 
 
 # equivalent to openstack compute list
