@@ -4,9 +4,9 @@ RUN apk --update add jq bash git curl tree openssh-client openssl gcc musl-dev l
 RUN pip install python-openstackclient==3.11.0
 
 COPY data /data
+COPY ENTRYPOINT.sh /ENTRYPOINT.sh
 
-ENTRYPOINT ["/usr/local/bin/ENTRYPOINT.sh"]
-
+ENTRYPOINT ["/ENTRYPOINT.sh"]
 CMD ["--version"]
 
 RUN rm -rf /var/cache/apk/* /tmp/* /var/tmp/* /root/.cache/*
