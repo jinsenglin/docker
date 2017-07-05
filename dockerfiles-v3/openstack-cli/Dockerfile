@@ -5,7 +5,7 @@ RUN pip install python-openstackclient==3.11.0
 
 COPY data /data
 
-ENTRYPOINT ["/usr/local/bin/openstack"]
+ENTRYPOINT ["/usr/local/bin/ENTRYPOINT.sh"]
 
 CMD ["--version"]
 
