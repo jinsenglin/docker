@@ -19,4 +19,4 @@ docker run --rm openstack-cli -v $PWD/data:/data -e "OPENRC=another-openrc.sh" s
 
 # TODO
 
-* source openrc
+* verify openrc
