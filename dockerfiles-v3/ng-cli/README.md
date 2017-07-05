@@ -14,5 +14,6 @@ docker run --rm ng-cli
 docker run --rm -v $PWD/data:/data ng-cli new myapp
 
 # equivalent to cd myapp && ng serve
-docker run --rm -v $PWD/data:/data -e "APP=myapp" -p 4200:4200 ng-cli serve
+docker run --name myapp -d -v $PWD/data:/data -e "APP=myapp" -p 4200:4200 ng-cli serve
+docker exec myapp curl http://localhost:4200
 ```
