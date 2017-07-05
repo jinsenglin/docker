@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 VAR_OPENRC=${OPENRC:-openrc.sh}
 VAR_DATA=/data
 
