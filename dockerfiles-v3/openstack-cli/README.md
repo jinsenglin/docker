@@ -11,7 +11,7 @@ docker build -t openstack-cli:latest -f Dockerfile .
 docker run --rm openstack-cli 
 
 # equivalent to openstack server list
-docker run --rm openstack-cli -v $PWD/data:/data -e server list
+docker run --rm openstack-cli -v $PWD/data:/data server list
 
 # equivalent to openstack server list
 docker run --rm openstack-cli -v $PWD/data:/data -e "OPENRC=another-openrc.sh" server list
