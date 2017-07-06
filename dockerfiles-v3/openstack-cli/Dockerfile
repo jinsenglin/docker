@@ -1,6 +1,6 @@
-FROM python:2.7.13-alpine
+FROM jimlintw/base:python-alpine
 
-RUN apk --update add jq bash git curl tree openssh-client openssl gcc musl-dev linux-headers
+RUN apk gcc musl-dev linux-headers
 RUN pip install python-openstackclient==3.11.0
 
 COPY data /data
