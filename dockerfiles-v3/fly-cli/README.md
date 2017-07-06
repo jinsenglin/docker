@@ -11,5 +11,5 @@ docker build -t fly-cli:latest -f Dockerfile .
 docker run --rm fly-cli 
 
 # equivalent to fly help
-docker run --rm -v fly-cli help
+docker run --rm fly-cli help
 ```
