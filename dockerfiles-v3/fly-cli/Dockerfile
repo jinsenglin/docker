@@ -4,6 +4,7 @@ RUN wget https://github.com/concourse/concourse/releases/download/v2.7.0/fly_lin
     chmod +x fly_linux_amd64 && \
     mv fly_linux_amd64 /usr/local/bin/fly
 
+COPY data /data
 COPY ENTRYPOINT.sh /ENTRYPOINT.sh
 
 ENTRYPOINT ["/ENTRYPOINT.sh"]
