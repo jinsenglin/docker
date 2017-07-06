@@ -10,3 +10,7 @@ docker build -t casperjs-cli:latest -f Dockerfile .
 # equivalent to casperjs --version
 docker run --rm casperjs-cli 
 ```
+
+# Note
+
+* Failed to use alpine
