@@ -1,6 +1,6 @@
 FROM jimlintw/base:python-alpine
 
-RUN apk add gcc musl-dev linux-headers
+RUN apk --update add gcc musl-dev linux-headers
 RUN pip install python-openstackclient==3.11.0
 
 COPY data /data
