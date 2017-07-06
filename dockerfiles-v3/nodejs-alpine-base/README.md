@@ -1,11 +1,11 @@
 # Build Image
 
 ```
-docker build -t nodejs-alpine-base:latest -f Dockerfile .
+docker build -t jimlintw/base:nodejs-alpine -f Dockerfile .
 ```
 
 # Launch Interactive CLI
 
 ```
-docker run -it --rm nodejs-alpine-base node
+docker run -it --rm jimlintw/base:nodejs-alpine node
 ```

@@ -1,22 +1,18 @@
 # Build
 
 ```
-docker build -t openstack-cli:latest -f Dockerfile .
+docker build -t jimlintw/cli:openstack -f Dockerfile .
 ```
 
 # Usage
 
 ```
 # equivalent to openstack --version
-docker run --rm openstack-cli 
+docker run --rm jimlintw/cli:openstack
 
 # equivalent to openstack server list
-docker run --rm -v $PWD/data:/data openstack-cli server list
+docker run --rm -v $PWD/data:/data jimlintw/cli:openstack server list
 
 # equivalent to openstack server list
-docker run --rm -v $PWD/data:/data -e "OPENRC=another-openrc.sh" openstack-cli server list
+docker run --rm -v $PWD/data:/data -e "OPENRC=another-openrc.sh" jimlintw/cli:openstack server list
 ```
-
-# TODO
-
-* verify openrc
