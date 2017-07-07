@@ -20,6 +20,7 @@
 * python-alpine
   * openstack
   * gcloud
+  * aliyuncli
 * nodejs-alpine
   * ng
 * nodejs-debian

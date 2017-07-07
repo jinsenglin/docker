@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export ACCESS_KEY_ID=fake
+export ACCESS_KEY_SECRET=fake
+export REGION_ID=cn-hangzhou
+export OUTPUT_FORMAT=json
