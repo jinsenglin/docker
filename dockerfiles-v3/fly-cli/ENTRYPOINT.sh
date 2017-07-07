@@ -2,8 +2,14 @@
 
 set -e
 
-VAR_OPENRC=${OPENRC:-openrc.sh}
+VAR_NORC=${X_NORC:-false}
+VAR_RC=${X_RC:-rc}
 VAR_DATA=/data
 
-source $VAR_DATA/$VAR_OPENRC
+if [ $VAR_NORC == "true" ]; then
+    :
+else
+    source $VAR_DATA/$VAR_RC
+fi
+
 exec fly $@
