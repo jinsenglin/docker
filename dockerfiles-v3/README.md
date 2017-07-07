@@ -18,8 +18,8 @@
 * alpine
   * fly
 * python-alpine
-  openstack
-  gcloud
+  * openstack
+  * gcloud
 * nodejs-alpine
   * ng
 * nodejs-debian
