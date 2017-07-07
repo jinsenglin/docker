@@ -7,9 +7,8 @@ VAR_RC=${X_RC:-rc}
 VAR_DATA=/data
 
 if [ $VAR_NORC == "true" ]; then
-    :
+    exec cqlsh $@
 else
-    source $VAR_DATA/$VAR_RC
+    exec cqlsh --cqlshrc $VAR_DATA/$VAR_RC $@
 fi
 
-exec cqlsh $@
