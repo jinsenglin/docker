@@ -20,3 +20,9 @@ docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:cqlsh -e 'h
 # Note
 
 Verified with Cassandra Server 2.2.10
+
+Quick start a local cassandra
+
+```
+docker run --rm --name cassandra -d -p 9042:9042 cassandra:2.2.10
+```
