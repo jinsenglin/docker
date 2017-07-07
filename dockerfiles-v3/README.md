@@ -21,6 +21,7 @@
   * openstack
   * gcloud
   * aliyuncli
+  * aws
 * nodejs-alpine
   * ng
 * nodejs-debian
