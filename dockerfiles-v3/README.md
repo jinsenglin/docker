@@ -7,6 +7,8 @@
 
 `tar` `unzip`
 
+`ping` `nc`
+
 `wget` `curl` `git` `ssh`
 
 `jq` `sed` `awk` 
