@@ -35,3 +35,4 @@
 * nodejs-debian
   * casperjs
 * jdk-alpine
+  * kafka
