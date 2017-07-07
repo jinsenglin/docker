@@ -21,6 +21,7 @@
 
 * alpine
   * fly
+  * bosh
 * python-alpine
   * openstack
   * gcloud
