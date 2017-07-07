@@ -31,3 +31,4 @@
   * ng
 * nodejs-debian
   * casperjs
+* jdk-alpine
