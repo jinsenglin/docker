@@ -13,6 +13,10 @@
 
 `tee` `tree` `openssl`
 
+# Exception
+
+* az-cli
+
 # Tree
 
 * alpine

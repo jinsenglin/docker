@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export SERVICE_PRINCIPAL_USERNAME=fakefake-fake-43af-fake-fakefakefake
+export SERVICE_PRINCIPAL_PASSWORD=fakefake-fake-fake-fakefake
+export TENANT=fakefake-fake-fake-fake-fakefakefake
