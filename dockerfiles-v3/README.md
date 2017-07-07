@@ -27,6 +27,7 @@
   * gcloud
   * aliyuncli
   * aws
+  * cqlsh
 * nodejs-alpine
   * ng
 * nodejs-debian
