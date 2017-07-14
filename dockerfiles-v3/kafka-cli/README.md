@@ -22,3 +22,21 @@ docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:kafka topic
 ```
 docker run --rm -v $PWD/data:/data jimlintw/cli:kafka topics --create --zookeeper 172.17.0.1:2181 --replication-factor 1 --partitions 1 --topic test
 ```
+
+# List Topic
+
+```
+docker run --rm -v $PWD/data:/data jimlintw/cli:kafka topics --list --zookeeper 172.17.0.1:2181
+```
+
+# Produce Message
+
+```
+docker run -it --rm -v $PWD/data:/data jimlintw/cli:kafka console-producer --broker-list 172.17.0.1:9092 --topic test
+```
+
+# Consume Message
+
+```
+docker run -it --rm -v $PWD/data:/data jimlintw/cli:kafka console-consumer --bootstrap-server 172.17.0.1:9092 --topic test --from-beginning
+```
