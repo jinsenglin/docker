@@ -40,3 +40,11 @@ docker run -it --rm -v $PWD/data:/data jimlintw/cli:kafka console-producer --bro
 ```
 docker run -it --rm -v $PWD/data:/data jimlintw/cli:kafka console-consumer --bootstrap-server 172.17.0.1:9092 --topic test --from-beginning
 ```
+
+---
+
+# Python
+
+```
+pip install kafka-python
+```
