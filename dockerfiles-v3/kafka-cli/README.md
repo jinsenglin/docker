@@ -47,4 +47,11 @@ docker run -it --rm -v $PWD/data:/data jimlintw/cli:kafka console-consumer --boo
 
 ```
 pip install kafka-python
+
+>>> from kafka import KafkaProducer
+>>> producer = KafkaProducer(bootstrap_servers='172.17.0.1:9092')
+>>> producer.send('test', b'some_message_bytes')
+
+>>> from kafka import KafkaConsumer
+>>> consumer = KafkaConsumer(bootstrap_servers='172.17.0.1:9092')
 ```
