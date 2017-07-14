@@ -53,5 +53,8 @@ pip install kafka-python
 >>> producer.send('test', b'some_message_bytes')
 
 >>> from kafka import KafkaConsumer
->>> consumer = KafkaConsumer(bootstrap_servers='172.17.0.1:9092')
+>>> consumer = KafkaConsumer(bootstrap_servers='172.17.0.1:9092', auto_offset_reset='earliest')
+>>> consumer.subscribe(['test'])
+>>> for message in consumer:
+>>>     print (message)
 ```
