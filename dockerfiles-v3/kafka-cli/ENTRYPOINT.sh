@@ -15,7 +15,7 @@ fi
 
 if [ $1 == "--version" ]; then
     ls -l /kafka
-    nohup /kafka/bin/zookeeper-server-start.sh /kafka/config/zookeeper.properties &
+    /kafka/bin/zookeeper-server-start.sh -daemon /kafka/config/zookeeper.properties
     /kafka/bin/kafka-server-start.sh /kafka/config/server.properties
 else
     cmd=$1
