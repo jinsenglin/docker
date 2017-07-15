@@ -36,3 +36,4 @@
   * casperjs
 * jdk-alpine
   * kafka
+  * zk
