@@ -9,8 +9,8 @@ RUN wget http://ftp.mirror.tw/pub/apache/kafka/0.11.0.0/kafka_2.11-0.11.0.0.tgz 
 COPY data /data
 COPY ENTRYPOINT.sh /ENTRYPOINT.sh
 
-RUN rm -rf /kafka_2.11-0.11.0.0/config && \
-    ln -s /data/config /kafka_2.11-0.11.0.0/config
+RUN rm -rf /kafka/config && \
+    ln -s /data/config /kafka/config
 
 ENTRYPOINT ["/ENTRYPOINT.sh"]
 CMD ["--version"]
