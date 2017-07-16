@@ -6,10 +6,12 @@ VAR_NORC=${X_NORC:-false}
 VAR_RC=${X_RC:-rc}
 VAR_DATA=/data
 
+export PATH=$PATH:/kafka/bin
+
 if [ $VAR_NORC == "true" ]; then
     :
 else
-    export PATH=$PATH:/kafka/bin
+    :
     #source $VAR_DATA/$VAR_RC
 fi
 
