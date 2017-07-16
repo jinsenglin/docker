@@ -7,14 +7,18 @@ docker build -t jimlintw/cli:kafka -f Dockerfile .
 # Usage
 
 ```
-# show version and start kafka server (then use ctrl + c to detach)
-docker run --rm -e "X_NORC=true" -t -p 2181:2181 -p 9092:9092 jimlintw/cli:kafka
+# show version and start kafka server using zookeeper in the same container (then use ctrl + c to detach)
+docker run --rm -e "X_NORC=true" -t -p 9092:9092 -p 2181:2181 jimlintw/cli:kafka
+
+# equivalent to kafka-server-start.sh /data/config/server.properties.v2 (start kafka server using zookeeper in the another container (then use ctrl + c to detach))
+docker run --rm -e "X_NORC=true" -t -p 9092:9092 jimlintw/cli:kafka server-start /data/config/server.properties.v2
 
 # equivalent to kafka-topics.sh --list --zookeeper 172.17.0.1:2181
 docker run --rm -v $PWD/data:/data jimlintw/cli:kafka topics --list --zookeeper 172.17.0.1:2181
 
 # equivalent to kafka-topics.sh --list --zookeeper 172.17.0.1:2181
 docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:kafka topics --list --zookeeper 172.17.0.1:2181
+
 ```
 
 # Create Topic
@@ -43,7 +47,15 @@ docker run -it --rm -v $PWD/data:/data jimlintw/cli:kafka console-consumer --boo
 
 ---
 
-# Python
+# Program with Python
+
+Launch a Python Container
+
+```
+docke run -it --rm jimlintw/base:python-alpine bash
+```
+
+In Python Container, Install Library and Connect to Kafka Server
 
 ```
 pip install kafka-python
