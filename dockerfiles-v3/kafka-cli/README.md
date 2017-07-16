@@ -58,7 +58,7 @@ docke run -it --rm jimlintw/base:python-alpine bash
 In Python Container, Install Library and Connect to Kafka Server
 
 ```
-pip install kafka-python
+pip install kafka-python==1.3.3
 
 >>> from kafka import KafkaProducer
 >>> producer = KafkaProducer(bootstrap_servers='172.17.0.1:9092')
