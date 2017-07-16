@@ -70,3 +70,5 @@ pip install kafka-python==1.3.3
 >>> for message in consumer:
 >>>     print (message)
 ```
+
+More kafka-python Client Examples, See http://www.biglittleant.cn/2016/12/28/kafka-python/
