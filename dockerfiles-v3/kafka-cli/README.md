@@ -72,3 +72,5 @@ pip install kafka-python==1.3.3
 ```
 
 More kafka-python Client Examples, See http://www.biglittleant.cn/2016/12/28/kafka-python/
+
+Usage of KafkaConsumer and KafkaProducer, See http://kafka-python.readthedocs.io/en/1.3.3/usage.html
