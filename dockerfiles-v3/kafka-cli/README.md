@@ -52,7 +52,7 @@ docker run -it --rm -v $PWD/data:/data jimlintw/cli:kafka console-consumer --boo
 Launch a Python Container
 
 ```
-docke run -it --rm jimlintw/base:python-alpine bash
+docker run -it --rm jimlintw/base:python-alpine bash
 ```
 
 In Python Container, Install Library and Connect to Kafka Server
