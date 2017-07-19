@@ -1,1 +1,5 @@
 #!/bin/bash
+
+export HOST=192.168.210.239
+export USER=root
+export PASS=1qaz@WSX

@@ -9,6 +9,7 @@ VAR_DATA=/data
 if [ $VAR_NORC == "true" ]; then
     exec fab $@
 else
-    exec fab -f /data/fabfile.py $@
+    source $VAR_DATA/$VAR_RC
+    exec fab -H $HOST -u $USER -p $PASS -f /data/fabfile.py $@
 fi
 
