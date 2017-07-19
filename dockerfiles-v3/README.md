@@ -37,3 +37,5 @@
 * jdk-alpine
   * kafka
   * zk
+* perl-alpine
+  * s3curl
