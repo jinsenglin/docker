@@ -1,2 +1,4 @@
+from fabric.api import put, run
+
 def hello():
-    print("Hello world!")
+    run('hostname')
