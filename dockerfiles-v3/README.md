@@ -38,4 +38,5 @@
   * kafka
   * zk
 * perl-alpine
+* perl-debian
   * s3curl
