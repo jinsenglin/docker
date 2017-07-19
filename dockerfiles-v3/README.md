@@ -30,6 +30,7 @@
   * aliyuncli
   * aws
   * cqlsh
+  * fab
 * nodejs-alpine
   * ng
 * nodejs-debian
