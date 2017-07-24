@@ -16,3 +16,35 @@ docker run --rm -v $PWD/data:/data jimlintw/cli:s3curl -- http://192.168.128.3:7
 # equivalent to s3curl.pl --id $MY_S3_ACCESS_ID --key $MY_S3_SECRET_KEY -- http://192.168.128.3:7480
 docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl -- http://192.168.128.3:7480
 ```
+
+---
+
+# List Bucket
+
+list bucket: /
+
+```
+docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl -- http://192.168.128.3:7480/
+```
+
+# Create Bucket
+
+create bucket: /NEW-BUCKET-NAME
+
+```
+docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl --createBucket -- http://192.168.128.3:7480/NEW-BUCKET-NAME
+```
+
+# Download Object
+
+download object: /src-bucket-name/src-object-name
+
+```
+docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl -- http://192.168.128.3:7480/src-bucket-name/src-object-name > /data/dest-object-name
+```
+
+---
+
+# Issues
+
+* RequestTimeTooSkewed
