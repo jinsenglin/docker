@@ -48,3 +48,9 @@ docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl -- h
 # Issues
 
 * RequestTimeTooSkewed
+
+---
+
+# Reference
+
+* https://github.com/rtdp/s3curl
