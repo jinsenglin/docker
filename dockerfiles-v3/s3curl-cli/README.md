@@ -40,7 +40,7 @@ docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl --cr
 upload object: src-object-name
 
 ```
-docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl --put=src-object-name -- http://192.168.128.3:7480/dest-bucket-name/dest-object-name
+docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl --put=/data/src-object-name -- http://192.168.128.3:7480/dest-bucket-name/dest-object-name
 ```
 
 # Download Object
