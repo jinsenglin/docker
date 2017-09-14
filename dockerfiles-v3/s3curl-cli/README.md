@@ -35,6 +35,14 @@ create bucket: /NEW-BUCKET-NAME
 docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl --createBucket -- http://192.168.128.3:7480/NEW-BUCKET-NAME
 ```
 
+# Upload Object
+
+upload object: src-object-name
+
+```
+docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl --put=src-object-name -- http://192.168.128.3:7480/dest-bucket-name/dest-object-name
+```
+
 # Download Object
 
 download object: /src-bucket-name/src-object-name
