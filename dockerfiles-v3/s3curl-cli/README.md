@@ -62,3 +62,4 @@ docker run --rm -v $PWD/data:/data -e "X_RC=example-rc" jimlintw/cli:s3curl -- h
 # Reference
 
 * https://github.com/rtdp/s3curl
+* https://eucalyptus.atlassian.net/wiki/spaces/STOR/pages/74842515/S3Curl
